@@ -41,13 +41,27 @@ ul li{
     width: 25%;
     padding: 15px;
 }
+.col-4{
+    width: 33.33%;
+    padding: 15px;
+}
 .col-6{
     width: 50%;
+    padding: 15px;
+}
+.col-8{
+    width: 66.66%;
     padding: 15px;
 }
 .col-12{
     width: 100%;
     padding: 15px;
+}
+.p-0{
+    padding: 0;
+}
+.ps-1{
+    padding-left: 1rem;
 }
 .d-flex{
     display: flex;
@@ -67,7 +81,9 @@ ul li{
 .mt-4{
     margin-top: 4rem;
 }
-
+.pt-0{
+    padding-top: 0;
+}
 /* header section start  */
 header {
     padding: 1rem 0;
@@ -76,6 +92,9 @@ header .navbar .logo{
     font-size: 32px;
     color: var(--theme-heading);
     font-weight: 500;
+}
+header nav{
+    transition: all 0.3s ease;
 }
 header nav ul li a{
     font-size: 16px;
@@ -106,6 +125,7 @@ header .navbar .toggle{
     background: url('../images/image.png');
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 0.3s ease-in-out;
 }
 /* hero section end  */
 
@@ -152,15 +172,41 @@ header .navbar .toggle{
     object-fit: cover;
     object-position: top;
 }
-.blog article h2{
+.blog h3{
+    font-size: 26px;
     color: var(--theme-heading);
-    font-weight: 400;
+    font-weight: 300;
 }
 
-.blog article p{
+.blog p{
     color: var(--theme-text);
     margin: 1.5rem 0;
     line-height: 2;
+    font-weight: 400;
+}
+.blog ul {
+    margin-top: 1rem;
+}
+.blog ul li{
+    margin-top: 1.5rem;
+}
+.blog ul li a{
+    text-decoration: underline;
+    color: #006699;
     font-weight: 300;
 }
+.blog .post-body{
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid var(--theme-text);
+}
+
+.blog .post-body h4{
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--theme-heading);
+}
+.blog .post-body p{
+    margin-bottom: 0;
+}
+
 /* blog section end  */

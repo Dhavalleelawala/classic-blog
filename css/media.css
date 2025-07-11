@@ -10,11 +10,30 @@
     .container{
         max-width: 960px;
     }
+    .col-lg-4{
+        width: 33.33%;
+    }
+    .col-lg-12{
+        width: 100%;
+    }
+    .pt-lg-2{
+        padding: 1.5rem;
+    }
+
 }
  /* md  */
 @media(max-width:991px){
     .container{
         max-width: 720px;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+    .pt-md-0{
+        padding-top: 0;
     }
 }
  /* sm  */
@@ -22,10 +41,55 @@
     .container{
         max-width: 540px;
     }
+    .col-sm-12{
+        width: 100%;
+    }
+    /* header start  */
+    header{
+        padding: 0;
+    }
+    header .navbar{
+        position: relative;
+        padding: 20px 0;
+    }
+    header .navbar nav{
+        padding-top: 1rem;
+        border-radius: 0 0 5px 5px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    header .navbar .toggle{
+        display: block;
+    }
+    /* header end  */
+    /* hero start  */
+    .hero {
+        height: 350px;
+    }
+    /* hero end  */
+
+    /* introduction start  */
+    .introduction .card-img img{
+        height: 230px !important;
+        object-fit: cover;
+    }
+    /* introduction end  */
+
 }
  /* xs  */
 @media(max-width:575px){
     .container{
         max-width: 100%;
+    }
+    .introduction .card-img img{
+        height: 150px !important;
+        object-position: top !important;
     }
 }
